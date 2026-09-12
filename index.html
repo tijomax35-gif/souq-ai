@@ -2,263 +2,426 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>SOUQ AI — متجرك الذكي من السودان</title>
-  <meta name="description" content="SOUQ AI يساعد التجار على إنشاء متجر إلكتروني احترافي وإنتاج محتوى المنتجات بالذكاء الاصطناعي.">
+
+  <meta
+    name="description"
+    content="SOUQ AI يساعد التجار على إنشاء متجر إلكتروني احترافي وإنتاج محتوى المنتجات بالذكاء الاصطناعي."
+  >
+
   <style>
-    :root{--green:#087a58;--dark:#073b36;--gold:#c89b4b;--cream:#fbfaf6;--text:#173b39;--muted:#63736f}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:Tahoma,"Segoe UI",Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.7}
-    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid #e7eee9}
-    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .logo{font-size:25px;font-weight:900;color:var(--dark)}.logo span{color:var(--green)}
-    .links{display:flex;gap:25px;font-size:14px}.links a:hover{color:var(--green)}
-    .actions{display:flex;gap:10px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 19px;border-radius:12px;font-weight:800;border:1px solid #dbe7e1}
-    .primary{background:var(--green);color:#fff;border-color:var(--green)}.secondary{background:#fff;color:var(--dark)}
-    .hero{padding:70px 0 45px;background:linear-gradient(135deg,#f7fbf8,#fff8ed)}
-    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-    .badge{display:inline-block;background:#e4f4ec;color:var(--green);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:800}
-    h1{font-size:clamp(38px,5vw,66px);line-height:1.15;margin:18px 0}.accent{color:var(--green)}
-    .hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-buttons{display:flex;gap:12px;margin:25px 0}
-    .checks{display:flex;gap:20px;flex-wrap:wrap;color:#45635d;font-size:13px;font-weight:700}
-    .preview{background:#fff;border:1px solid #e5ebe7;border-radius:25px;padding:10px;box-shadow:0 25px 70px #174f3920}
-    .preview img{display:block;width:100%;border-radius:18px}
-    .features{padding:55px 0;background:#fff}.feature-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;border:1px solid #e7eee9;border-radius:18px;overflow:hidden}
-    .feature{padding:25px 16px;text-align:center;background:#fff}.icon{font-size:30px}.feature h3{font-size:16px;margin:8px 0}.feature p{font-size:13px;color:var(--muted);margin:0}
-    section{padding:75px 0}.section-head{text-align:center;margin-bottom:35px}.section-head h2{font-size:34px;margin:0 0 8px}.section-head p{color:var(--muted)}
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e4ece7;border-radius:18px;padding:24px;box-shadow:0 8px 25px #0b48300a}.num{width:38px;height:38px;border-radius:50%;background:#e7f5ee;color:var(--green);display:grid;place-items:center;font-weight:900}
-    .ai{background:#edf8f2}.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.ai-box{background:#fff;border-radius:22px;padding:30px;border:1px solid #dcebe3}.ai-list{display:grid;gap:12px}.ai-list div{padding:13px;border-radius:12px;background:#f7faf8}
-    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{overflow:hidden}.product .pic{height:190px;background:linear-gradient(135deg,#1c4b43,#d2b071);display:grid;place-items:center;color:#fff;font-size:45px}.product h3{margin:15px 0 2px}.price{font-weight:900;color:var(--green)}
-    .pricing{background:#fff}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.plan{padding:28px;border:1px solid #dce7e1;border-radius:18px;background:#fff}.plan.featured{border:2px solid var(--green);transform:translateY(-8px)}.plan h3{margin-top:0}.amount{font-size:34px;font-weight:900}.plan ul{padding-right:18px;color:var(--muted)}
-    .cta{background:linear-gradient(135deg,#063d37,#0b6e55);color:#fff;text-align:center}.cta p{color:#d6ebe3}.cta .secondary{color:var(--dark)}
-    footer{background:#052f2b;color:#d8ebe4;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
-    @media(max-width:900px){.links{display:none}.hero-grid,.ai-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.plans{grid-template-columns:1fr}.plan.featured{transform:none}}
-    @media(max-width:560px){nav{height:62px}.actions .secondary{display:none}.hero{padding-top:45px}.hero-buttons{flex-direction:column}.feature-grid,.steps,.products{grid-template-columns:1fr}section{padding:55px 0}.preview{padding:5px}}
-  </style>
-</head>
-<body>
-<header><div class="container"><nav>
-  <a class="logo" href="#">SOUQ <span>AI</span></a>
-  <div class="links"><a href="#features">المميزات</a><a href="#how">كيف يعمل؟</a><a href="#ai">الذكاء الاصطناعي</a><a href="#pricing">الأسعار</a></div>
-  <div class="actions"><a class="btn secondary" href="#pricing">تسجيل الدخول</a><a class="btn primary" href="#register">ابدأ مجانًا</a></div>
-</nav></div></header>
+    :root {
+      --green: #087a58;
+      --dark: #073b36;
+      --gold: #c89b4b;
+      --cream: #fbfaf6;
+      --text: #173b39;
+      --muted: #63736f;
+    }
 
-<main>
-<section class="hero" id="start"><div class="container hero-grid">
-  <div>
-    <span class="badge">🇸🇩 الحل الأمثل للتاجر السوداني</span>
-    <h1>حوّل منتجاتك إلى متجر <span class="accent">احترافي</span> في دقائق</h1>
-    <p>أنشئ متجرك الإلكتروني بسهولة، أضف منتجاتك، ودع الذكاء الاصطناعي يساعدك في كتابة أوصاف المنتجات والإعلانات والرد على العملاء.</p>
-    <div class="hero-buttons"><a class="btn primary" href="#pricing">ابدأ مجانًا ←</a><a class="btn secondary" href="#how">شاهد كيف يعمل</a></div>
-    <div class="checks"><span>✓ يعمل على الجوال</span><span>✓ دعم محلي وسوداني</span><span>✓ بدون تعقيد تقني</span></div>
-  </div>
-  <div class="preview"><img src="souq-ai-design.png" alt="معاينة متجر SOUQ AI بالملابس والثوب والجلابيب والعطور السودانية"></div>
-</div></section>
+    * {
+      box-sizing: border-box;
+    }
 
-<section class="features" id="features"><div class="container"><div class="feature-grid">
-  <div class="feature"><div class="icon">⚡</div><h3>ذكاء اصطناعي متكامل</h3><p>وصف المنتجات والإعلانات والردود تلقائيًا.</p></div>
-  <div class="feature"><div class="icon">🛍️</div><h3>متجر احترافي خاص بك</h3><p>رابط متجر سريع وجذاب لعملائك.</p></div>
-  <div class="feature"><div class="icon">📱</div><h3>يعمل على جميع الأجهزة</h3><p>إدارة المتجر من الهاتف أو الكمبيوتر.</p></div>
-  <div class="feature"><div class="icon">🇸🇩</div><h3>دعم محلي وسوداني</h3><p>واجهة ومحتوى مناسبين للسوق السوداني.</p></div>
-  <div class="feature"><div class="icon">📈</div><h3>مناسب لكل الأحجام</h3><p>من مشروع صغير إلى متجر كبير.</p></div>
-</div></div></section>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<section id="how"><div class="container"><div class="section-head"><h2>كيف يعمل SOUQ AI؟</h2><p>أربع خطوات بسيطة من الفكرة إلى البيع.</p></div>
-<div class="steps">
-  <div class="card"><div class="num">1</div><h3>أنشئ حسابك</h3><p>سجّل في دقائق وابدأ إعداد متجرك.</p></div>
-  <div class="card"><div class="num">2</div><h3>أضف منتجاتك</h3><p>أدخل الاسم والصور والسعر والمعلومات الأساسية.</p></div>
-  <div class="card"><div class="num">3</div><h3>استخدم الذكاء الاصطناعي</h3><p>أنشئ أوصافًا وإعلانات وردودًا جاهزة.</p></div>
-  <div class="card"><div class="num">4</div><h3>شارك متجرك</h3><p>أرسل الرابط لعملائك وابدأ استقبال الطلبات.</p></div>
-</div></div></section>
+    body {
+      margin: 0;
+      font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-<section class="ai" id="ai"><div class="container ai-grid">
-  <div><span class="badge">أدوات الذكاء الاصطناعي</span><h2>كل ما تحتاجه لتسويق منتجاتك في مكان واحد.</h2><p>من جلابية سودانية فاخرة إلى ثوب نسائي أو عطر وبخور، حوّل المعلومات البسيطة إلى محتوى تسويقي جاهز.</p><a class="btn primary" href="#pricing">جرّب مجانًا</a></div>
-  <div class="ai-box"><div class="ai-list"><div>✓ وصف احترافي للمنتج</div><div>✓ عنوان جذاب</div><div>✓ منشورات للسوشيال ميديا</div><div>✓ ردود جاهزة للعملاء</div><div>✓ أفكار للإعلانات</div></div></div>
-</div></section>
-<section id="register">
-  <div class="container">
-    <div class="section-head">
-      <h2>أنشئ حسابك الآن</h2>
-      <p>ابدأ بإنشاء متجرك الإلكتروني مجانًا.</p>
-    </div>
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-    <div class="card" style="max-width:600px;margin:auto;">
-      <form id="registerForm">
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
 
-        <label>اسمك</label>
-        <input type="text" name="name" required placeholder="اكتب اسمك"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffffee;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e7eee9;
+    }
 
-        <label>البريد الإلكتروني</label>
-        <input type="email" name="email" required placeholder="example@email.com"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-        <label>كلمة المرور</label>
-        <input type="password" name="password" required minlength="6" placeholder="6 أحرف على الأقل"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    .logo {
+      font-size: 25px;
+      font-weight: 900;
+      color: var(--dark);
+    }
 
-        <button type="submit" class="btn primary"
-          style="width:100%;cursor:pointer;">
-          إنشاء المتجر الآن
-        </button>
+    .logo span {
+      color: var(--green);
+    }
 
-        <p id="registerMessage" style="text-align:center;margin-top:15px;"></p>
+    .links {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+    }
 
-      </form>
-    </div>
-  </div>
-</section>
-<section><div class="container"><div class="section-head"><h2>نماذج من المتاجر</h2><p>تصميم يناسب المنتجات السودانية الفاخرة.</p></div>
-<div class="products">
-  <div class="card product"><div class="pic">👗</div><h3>ثوب سوداني فاخر</h3><div class="price">45,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🥻</div><h3>جلابية سودانية</h3><div class="price">32,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🧥</div><h3>جلابية رجالية مطرزة</h3><div class="price">28,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🧴</div><h3>عطر وبخور سوداني</h3><div class="price">120,000 جنيه</div></div>
-</div></div></section>
+    .links a:hover {
+      color: var(--green);
+    }
 
-<section class="pricing" id="pricing"><div class="container"><div class="section-head"><h2>خطط الأسعار</h2><p>ابدأ مجانًا، ووسّع متجرك عندما تحتاج.</p></div>
-<div class="plans">
-  <div class="plan"><h3>المجانية</h3><div class="amount">$0</div><ul><li>حتى 5 منتجات</li><li>صفحة متجر أساسية</li><li>محتوى AI محدود</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-  <div class="plan featured"><h3>الأساسية</h3><div class="amount">$7 <small>/شهريًا</small></div><ul><li>حتى 100 منتج</li><li>محتوى AI أساسي</li><li>قوالب تصميم احترافية</li><li>دعم عبر واتساب</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-  <div class="plan"><h3>الاحترافية</h3><div class="amount">$15 <small>/شهريًا</small></div><ul><li>منتجات أكثر</li><li>محتوى AI متقدم</li><li>قوالب مميزة</li><li>دعم وأدوات إضافية</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-</div></div></section><script src="script.js"></script>
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
 
-<section class="cta"><div class="container"><h2>ابدأ متجرك الآن وانطلق في عالم التجارة الإلكترونية</h2><p>ابنِ حضورك الرقمي واعرض منتجاتك السودانية للعالم.</p><a class="btn secondary" href="#start">ابدأ مجانًا ←</a></div></section>
-</main>
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border-radius: 12px;
+      font-weight: 800;
+      border: 1px solid #dbe7e1;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
 
-<footer><div class="container"><div class="footer-row"><div><strong>SOUQ AI</strong><br>متجرك الذكي من السودان</div><div>الرئيسية · المميزات · كيف يعمل؟ · الأسعار</div><div>© 2026 SOUQ AI — جميع الحقوق محفوظة</div></div></div></footer>
-  <!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SOUQ AI — متجرك الذكي من السودان</title>
-  <meta name="description" content="SOUQ AI يساعد التجار على إنشاء متجر إلكتروني احترافي وإنتاج محتوى المنتجات بالذكاء الاصطناعي.">
-  <style>
-    :root{--green:#087a58;--dark:#073b36;--gold:#c89b4b;--cream:#fbfaf6;--text:#173b39;--muted:#63736f}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;font-family:Tahoma,"Segoe UI",Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.7}
-    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
-    header{position:sticky;top:0;z-index:10;background:#ffffffee;backdrop-filter:blur(10px);border-bottom:1px solid #e7eee9}
-    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .logo{font-size:25px;font-weight:900;color:var(--dark)}.logo span{color:var(--green)}
-    .links{display:flex;gap:25px;font-size:14px}.links a:hover{color:var(--green)}
-    .actions{display:flex;gap:10px;align-items:center}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 19px;border-radius:12px;font-weight:800;border:1px solid #dbe7e1}
-    .primary{background:var(--green);color:#fff;border-color:var(--green)}.secondary{background:#fff;color:var(--dark)}
-    .hero{padding:70px 0 45px;background:linear-gradient(135deg,#f7fbf8,#fff8ed)}
-    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-    .badge{display:inline-block;background:#e4f4ec;color:var(--green);padding:7px 13px;border-radius:30px;font-size:13px;font-weight:800}
-    h1{font-size:clamp(38px,5vw,66px);line-height:1.15;margin:18px 0}.accent{color:var(--green)}
-    .hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-buttons{display:flex;gap:12px;margin:25px 0}
-    .checks{display:flex;gap:20px;flex-wrap:wrap;color:#45635d;font-size:13px;font-weight:700}
-    .preview{background:#fff;border:1px solid #e5ebe7;border-radius:25px;padding:10px;box-shadow:0 25px 70px #174f3920}
-    .preview img{display:block;width:100%;border-radius:18px}
-    .features{padding:55px 0;background:#fff}.feature-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;border:1px solid #e7eee9;border-radius:18px;overflow:hidden}
-    .feature{padding:25px 16px;text-align:center;background:#fff}.icon{font-size:30px}.feature h3{font-size:16px;margin:8px 0}.feature p{font-size:13px;color:var(--muted);margin:0}
-    section{padding:75px 0}.section-head{text-align:center;margin-bottom:35px}.section-head h2{font-size:34px;margin:0 0 8px}.section-head p{color:var(--muted)}
-    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #e4ece7;border-radius:18px;padding:24px;box-shadow:0 8px 25px #0b48300a}.num{width:38px;height:38px;border-radius:50%;background:#e7f5ee;color:var(--green);display:grid;place-items:center;font-weight:900}
-    .ai{background:#edf8f2}.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.ai-box{background:#fff;border-radius:22px;padding:30px;border:1px solid #dcebe3}.ai-list{display:grid;gap:12px}.ai-list div{padding:13px;border-radius:12px;background:#f7faf8}
-    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product{overflow:hidden}.product .pic{height:190px;background:linear-gradient(135deg,#1c4b43,#d2b071);display:grid;place-items:center;color:#fff;font-size:45px}.product h3{margin:15px 0 2px}.price{font-weight:900;color:var(--green)}
-    .pricing{background:#fff}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.plan{padding:28px;border:1px solid #dce7e1;border-radius:18px;background:#fff}.plan.featured{border:2px solid var(--green);transform:translateY(-8px)}.plan h3{margin-top:0}.amount{font-size:34px;font-weight:900}.plan ul{padding-right:18px;color:var(--muted)}
-    .cta{background:linear-gradient(135deg,#063d37,#0b6e55);color:#fff;text-align:center}.cta p{color:#d6ebe3}.cta .secondary{color:var(--dark)}
-    footer{background:#052f2b;color:#d8ebe4;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px}
-    @media(max-width:900px){.links{display:none}.hero-grid,.ai-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.plans{grid-template-columns:1fr}.plan.featured{transform:none}}
-    @media(max-width:560px){nav{height:62px}.actions .secondary{display:none}.hero{padding-top:45px}.hero-buttons{flex-direction:column}.feature-grid,.steps,.products{grid-template-columns:1fr}section{padding:55px 0}.preview{padding:5px}}
-  </style>
-</head>
-<body>
-<header><div class="container"><nav>
-  <a class="logo" href="#">SOUQ <span>AI</span></a>
-  <div class="links"><a href="#features">المميزات</a><a href="#how">كيف يعمل؟</a><a href="#ai">الذكاء الاصطناعي</a><a href="#pricing">الأسعار</a></div>
-  <div class="actions"><a class="btn secondary" href="#pricing">تسجيل الدخول</a><a class="btn primary" href="#start">ابدأ مجانًا</a></div>
-</nav></div></header>
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-<main>
-<section class="hero" id="start"><div class="container hero-grid">
-  <div>
-    <span class="badge">🇸🇩 الحل الأمثل للتاجر السوداني</span>
-    <h1>حوّل منتجاتك إلى متجر <span class="accent">احترافي</span> في دقائق</h1>
-    <p>أنشئ متجرك الإلكتروني بسهولة، أضف منتجاتك، ودع الذكاء الاصطناعي يساعدك في كتابة أوصاف المنتجات والإعلانات والرد على العملاء.</p>
-    <div class="hero-buttons"><a class="btn primary" href="#pricing">ابدأ مجانًا ←</a><a class="btn secondary" href="#how">شاهد كيف يعمل</a></div>
-    <div class="checks"><span>✓ يعمل على الجوال</span><span>✓ دعم محلي وسوداني</span><span>✓ بدون تعقيد تقني</span></div>
-  </div>
-  <div class="preview"><img src="souq-ai-design.png" alt="معاينة متجر SOUQ AI بالملابس والثوب والجلابيب والعطور السودانية"></div>
-</div></section>
+    .primary {
+      background: var(--green);
+      color: #fff;
+      border-color: var(--green);
+    }
 
-<section class="features" id="features"><div class="container"><div class="feature-grid">
-  <div class="feature"><div class="icon">⚡</div><h3>ذكاء اصطناعي متكامل</h3><p>وصف المنتجات والإعلانات والردود تلقائيًا.</p></div>
-  <div class="feature"><div class="icon">🛍️</div><h3>متجر احترافي خاص بك</h3><p>رابط متجر سريع وجذاب لعملائك.</p></div>
-  <div class="feature"><div class="icon">📱</div><h3>يعمل على جميع الأجهزة</h3><p>إدارة المتجر من الهاتف أو الكمبيوتر.</p></div>
-  <div class="feature"><div class="icon">🇸🇩</div><h3>دعم محلي وسوداني</h3><p>واجهة ومحتوى مناسبين للسوق السوداني.</p></div>
-  <div class="feature"><div class="icon">📈</div><h3>مناسب لكل الأحجام</h3><p>من مشروع صغير إلى متجر كبير.</p></div>
-</div></div></section>
+    .secondary {
+      background: #fff;
+      color: var(--dark);
+    }
 
-<section id="how"><div class="container"><div class="section-head"><h2>كيف يعمل SOUQ AI؟</h2><p>أربع خطوات بسيطة من الفكرة إلى البيع.</p></div>
-<div class="steps">
-  <div class="card"><div class="num">1</div><h3>أنشئ حسابك</h3><p>سجّل في دقائق وابدأ إعداد متجرك.</p></div>
-  <div class="card"><div class="num">2</div><h3>أضف منتجاتك</h3><p>أدخل الاسم والصور والسعر والمعلومات الأساسية.</p></div>
-  <div class="card"><div class="num">3</div><h3>استخدم الذكاء الاصطناعي</h3><p>أنشئ أوصافًا وإعلانات وردودًا جاهزة.</p></div>
-  <div class="card"><div class="num">4</div><h3>شارك متجرك</h3><p>أرسل الرابط لعملائك وابدأ استقبال الطلبات.</p></div>
-</div></div></section>
+    .hero {
+      padding: 70px 0 45px;
+      background: linear-gradient(135deg, #f7fbf8, #fff8ed);
+    }
 
-<section class="ai" id="ai"><div class="container ai-grid">
-  <div><span class="badge">أدوات الذكاء الاصطناعي</span><h2>كل ما تحتاجه لتسويق منتجاتك في مكان واحد.</h2><p>من جلابية سودانية فاخرة إلى ثوب نسائي أو عطر وبخور، حوّل المعلومات البسيطة إلى محتوى تسويقي جاهز.</p><a class="btn primary" href="#pricing">جرّب مجانًا</a></div>
-  <div class="ai-box"><div class="ai-list"><div>✓ وصف احترافي للمنتج</div><div>✓ عنوان جذاب</div><div>✓ منشورات للسوشيال ميديا</div><div>✓ ردود جاهزة للعملاء</div><div>✓ أفكار للإعلانات</div></div></div>
-</div></section>
-<section id="register">
-  <div class="container">
-    <div class="section-head">
-      <h2>أنشئ حسابك الآن</h2>
-      <p>ابدأ بإنشاء متجرك الإلكتروني مجانًا.</p>
-    </div>
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
 
-    <div class="card" style="max-width:600px;margin:auto;">
-      <form id="registerForm">
+    .badge {
+      display: inline-block;
+      background: #e4f4ec;
+      color: var(--green);
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 800;
+    }
 
-        <label>اسمك</label>
-        <input type="text" name="name" required placeholder="اكتب اسمك"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    h1 {
+      font-size: clamp(38px, 5vw, 66px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
 
-        <label>البريد الإلكتروني</label>
-        <input type="email" name="email" required placeholder="example@email.com"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    .accent {
+      color: var(--green);
+    }
 
-        <label>كلمة المرور</label>
-        <input type="password" name="password" required minlength="6" placeholder="6 أحرف على الأقل"
-          style="width:100%;padding:13px;margin:6px 0 15px;border:1px solid #dce7e1;border-radius:10px;">
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 620px;
+    }
 
-        <button type="submit" class="btn primary"
-          style="width:100%;cursor:pointer;">
-          إنشاء المتجر الآن
-        </button>
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      margin: 25px 0;
+    }
 
-        <p id="registerMessage" style="text-align:center;margin-top:15px;"></p>
+    .checks {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: #45635d;
+      font-size: 13px;
+      font-weight: 700;
+    }
 
-      </form>
-    </div>
-  </div>
-</section>
-<section><div class="container"><div class="section-head"><h2>نماذج من المتاجر</h2><p>تصميم يناسب المنتجات السودانية الفاخرة.</p></div>
-<div class="products">
-  <div class="card product"><div class="pic">👗</div><h3>ثوب سوداني فاخر</h3><div class="price">45,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🥻</div><h3>جلابية سودانية</h3><div class="price">32,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🧥</div><h3>جلابية رجالية مطرزة</h3><div class="price">28,000 جنيه</div></div>
-  <div class="card product"><div class="pic">🧴</div><h3>عطر وبخور سوداني</h3><div class="price">120,000 جنيه</div></div>
-</div></div></section>
+    .preview {
+      background: #fff;
+      border: 1px solid #e5ebe7;
+      border-radius: 25px;
+      padding: 10px;
+      box-shadow: 0 25px 70px #174f3920;
+    }
 
-<section class="pricing" id="pricing"><div class="container"><div class="section-head"><h2>خطط الأسعار</h2><p>ابدأ مجانًا، ووسّع متجرك عندما تحتاج.</p></div>
-<div class="plans">
-  <div class="plan"><h3>المجانية</h3><div class="amount">$0</div><ul><li>حتى 5 منتجات</li><li>صفحة متجر أساسية</li><li>محتوى AI محدود</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-  <div class="plan featured"><h3>الأساسية</h3><div class="amount">$7 <small>/شهريًا</small></div><ul><li>حتى 100 منتج</li><li>محتوى AI أساسي</li><li>قوالب تصميم احترافية</li><li>دعم عبر واتساب</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-  <div class="plan"><h3>الاحترافية</h3><div class="amount">$15 <small>/شهريًا</small></div><ul><li>منتجات أكثر</li><li>محتوى AI متقدم</li><li>قوالب مميزة</li><li>دعم وأدوات إضافية</li></ul><a class="btn primary" href="#start">ابدأ الآن</a></div>
-</div></div></section><script src="script.js"></script>
+    .preview img {
+      display: block;
+      width: 100%;
+      border-radius: 18px;
+    }
 
-<section class="cta"><div class="container"><h2>ابدأ متجرك الآن وانطلق في عالم التجارة الإلكترونية</h2><p>ابنِ حضورك الرقمي واعرض منتجاتك السودانية للعالم.</p><a class="btn secondary" href="#start">ابدأ مجانًا ←</a></div></section>
-</main>
+    .features {
+      padding: 55px 0;
+      background: #fff;
+    }
 
-<footer><div class="container"><div class="footer-row"><div><strong>SOUQ AI</strong><br>متجرك الذكي من السودان</div><div>الرئيسية · المميزات · كيف يعمل؟ · الأسعار</div><div>© 2026 SOUQ AI — جميع الحقوق محفوظة</div></div></div></footer>
-</body>
-</html>
-</body>
-</html>
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      border: 1px solid #e7eee9;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .feature {
+      padding: 25px 16px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    .feature h3 {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .feature p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    section {
+      padding: 75px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-head h2 {
+      font-size: 34px;
+      margin: 0 0 8px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e4ece7;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 25px #0b48300a;
+    }
+
+    .num {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #e7f5ee;
+      color: var(--green);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .ai {
+      background: #edf8f2;
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .ai-box {
+      background: #fff;
+      border-radius: 22px;
+      padding: 30px;
+      border: 1px solid #dcebe3;
+    }
+
+    .ai-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .ai-list div {
+      padding: 13px;
+      border-radius: 12px;
+      background: #f7faf8;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .product {
+      overflow: hidden;
+    }
+
+    .product .pic {
+      height: 190px;
+      background: linear-gradient(135deg, #1c4b43, #d2b071);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 45px;
+    }
+
+    .product h3 {
+      margin: 15px 0 2px;
+    }
+
+    .price {
+      font-weight: 900;
+      color: var(--green);
+    }
+
+    .pricing {
+      background: #fff;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .plan {
+      padding: 28px;
+      border: 1px solid #dce7e1;
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .plan.featured {
+      border: 2px solid var(--green);
+      transform: translateY(-8px);
+    }
+
+    .plan h3 {
+      margin-top: 0;
+    }
+
+    .amount {
+      font-size: 34px;
+      font-weight: 900;
+    }
+
+    .plan ul {
+      padding-right: 18px;
+      color: var(--muted);
+    }
+
+    .register-section {
+      background: #f7fbf8;
+    }
+
+    .register-card {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .register-form label {
+      display: block;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .register-form input {
+      width: 100%;
+      padding: 13px;
+      margin: 6px 0 15px;
+      border: 1px solid #dce7e1;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .register-form input:focus {
+      border-color: var(--green);
+    }
+
+    .register-form .submit-btn {
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    #registerMessage {
+      text-align: center;
+      margin-top: 15px;
+      font-weight: 700;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #063d37, #0b6e55);
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #d6ebe3;
+    }
+
+    .cta .secondary {
+      color: var(--dark);
+    }
+
+    footer {
+      background: #052f2b;
+      color: #d8ebe4;
+      padding: 28px 0;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    @media (max-width: 
